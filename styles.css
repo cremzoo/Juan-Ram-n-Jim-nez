@@ -1,0 +1,180 @@
+
+html {
+  background: white;
+  height: 100%;
+  font-size: 10px;
+}
+
+body {
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 153, 0, 0.4),
+      rgba(0, 153, 0, 0.2)
+    ),
+    url("https://res.cloudinary.com/cremz/image/upload/v1525849215/grunge texture1.png");
+ /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  */
+}
+
+#jumbo {
+  font-family: "Rock Salt", cursive;
+  letter-spacing: 0.6rem;
+  background-color: rgba(179, 119, 0, 0.5);
+  color: #332200;
+}
+
+#title {
+  background-color: #332200;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(102, 68, 0, 0.5) 3px 3px 1px;
+}
+
+#spanish {
+  font-size: 2.5rem;
+}
+
+.rounded-circle {
+  display: block;
+  margin: auto;
+  mix-blend-mode: luminosity;
+  width: 30%;
+  height: 30%;
+}
+
+#img-caption {
+  font-size: 1.2rem;
+  color: #d9ffb3;
+  text-align: center;
+}
+.poem {
+  background-color: rgba(179, 119, 0, 0.2);
+  display: flex;
+  flex: 1;
+}
+
+.part {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.poem p {
+  font-family: "PT Mono", monospace;
+  font-size: 2rem;
+  color: #1a1100;
+  display: flex;
+  flex-direction: column;
+}
+
+.poem pre {
+  font-family: "PT Mono", monospace;
+  color: #d9ffb3;
+  font-size: 1.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.poem span {
+  font-family: "PT Mono", monospace;
+  color: #b8b894;
+  font-size: 1.3rem;
+}
+
+#tribute-info {
+  font-family: "PT Mono", monospace;
+  color: #d9ffb3;
+  font-size: 1.6rem;
+  background-color: rgba(179, 119, 0, 0.2);
+  letter-spacing: 0.1rem;
+}
+
+.wiki {
+  font-family: "PT Mono", monospace;
+  background-color: rgba(179, 119, 0, 0.2);
+  letter-spacing: 0.2rem;
+  color: #d9ffb3;
+  font-size: 1.4rem;
+}
+
+#tribute-link {
+  font-family: "Rock Salt", cursive;
+  letter-spacing: 0.2rem;
+  color: #d9ffb3;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#tribute-link:hover {
+  color: #1a1100;
+}
+
+footer {
+  font-family: "Rock Salt", cursive;
+  color: #1a1100;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  #jumbo {
+    letter-spacing: 0.1rem;
+  }
+
+  #spanish {
+    font-size: 2rem;
+  }
+  
+  .rounded-circle {
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    width: 50%;
+    height: 50%;
+  }
+
+  .poem {
+    flex-direction: column;
+    background-color: rgba(179, 119, 0, 0.4);
+  }
+
+  #tribute-info,
+  .wiki {
+    background-color: rgba(179, 119, 0, 0.4);
+  }
+
+  .poem p {
+    font-size: 1.6rem;
+    white-space: pre-wrap;
+  }
+
+  .poem pre {
+    white-space: pre-wrap;
+    font-size: 1.4rem;
+  }
+
+  .poem span {
+    font-size: 1rem;
+  }
+
+  .about p {
+    font-size: 1.4rem;
+    white-space: pre-wrap;
+    padding: 10px !important;
+    text-align: left !important;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+}
